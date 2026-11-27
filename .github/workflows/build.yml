@@ -23,3 +23,6 @@ jobs:
 
       - name: Build with Maven
         run: mvn --batch-mode clean verify
+
+      - name: Build Docker image
+        run: docker build -t nextwork-web-app:ci .
